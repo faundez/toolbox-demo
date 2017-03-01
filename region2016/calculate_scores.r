@@ -24,3 +24,4 @@ write.csv(scores, 'scores.csv', na='', row.names=F)
 #go to prep and change your new information in layers.csv and close excel before to run it again
 #check in Git if region2016/scores.csv change the way I spect say only AO change
 
+#for any change restart R

@@ -352,7 +352,7 @@ AO = function(layers,
     select(region_id = id_num, year, need = val_num)
 
   ## join data layers into single data frame (see RStudio cheatsheets)
-  ao_data <- left_join(d1, d2, by="region_id")
+  ao_data <- left_join(d1, d2, by="region_id"); summary(ao_data)
 
   ############ MODEL ##############
   ## this step calculates status scores of all years, using the goal model.
@@ -363,7 +363,7 @@ AO = function(layers,
 
   ao_model <- ao_data %>%
     mutate(Du = (1 - need) * (1 - access)) %>%
-    mutate(status = (1 - Du) * sustainability)
+    mutate(status = (1 - Du/2) * sustainability)
   # head(ao_model); summary(ao_model)
 
   ############ STATUS ##############
