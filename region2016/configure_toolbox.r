@@ -1,4 +1,4 @@
-## configure_toolbox.r
+## configure_toolbox.r (this is the first thing I should do, and I could run the whole code or press Source, make sure I have the same directory path as in calculate.scores.r )
 
 ## configure_toolbox.r ensures all files in your repo are properly configured. It must be sourced before calculating OHI scores; here or from `calculate_scores.r`.
 
@@ -16,7 +16,7 @@ if (!"ohicore" %in% (.packages())) {
 }
 
 ## set working directory to the scenario that contains conf and layers directories
-setwd('~/github/toolbox-demo/region2016')
+setwd('~/2017_winter/github/toolbox-demo/region2016')
 
 ## load scenario configuration
 ## 'conf' link all the data layers (for goal, pressures, resilience), goal functions, and other OHI parameters that determines how ohi scores
