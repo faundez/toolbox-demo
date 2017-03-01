@@ -11,7 +11,7 @@
 ## in functions.r. Running configure_toolbox.r and a specific goal model line-by-line
 ## in functions.R is a good workflow.
 
-## run the configure_toolbox.r script to check configuration
+## run the configure_toolbox.r script to check configuration, RUN AGAIN WHEN RECALCULATE SCORes
 source('~/2017_winter/github/toolbox-demo/region2016/configure_toolbox.r') #home can be ~ so github folder should be in my documents that is my home
 
 ## calculate scenario scores
